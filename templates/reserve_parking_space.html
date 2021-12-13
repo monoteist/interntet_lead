@@ -9,6 +9,6 @@
     <button type="submit" class="btn btn-success">Зарезервировать</button>
 </form>
 {% if user.role == 'MANAGER' %}
-<a href="{% url 'parking_delete' space.pk %}">Удалить</a>
+<a href="{% url 'parking_delete' object.pk %}">Удалить</a>
 {% endif %}
 {% endblock content %}

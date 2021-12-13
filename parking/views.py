@@ -18,6 +18,5 @@ class ParkingReserveView(UpdateView):
 
 class ParkingDeleteView(DeleteView):
     model = ParkingSpace
-    context_object_name = 'space'
     success_url = reverse_lazy('parking')
     template_name = 'parking_space_delete.html'
