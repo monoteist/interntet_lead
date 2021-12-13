@@ -6,10 +6,10 @@
     <p>{{ space }}</p>
     {% if space.status == 'reserved' %}
     {% else %}
-    <a href="">Зарезервировать</a>
+    <a href="{% url 'parking_reserve' space.pk %}">Зарезервировать</a>
     {% endif %}
     {% if user.role == 'MANAGER' %}
-            <a href="">Изменить время брони</a>
+            <a href="{% url 'parking_reserve' space.pk %}">Изменить время брони</a>
     {% endif %}
     {% endfor %}
 {% endblock content %}
