@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Парковка{% endblock title %}
+{% block content %}
+    <h2>Парковка</h2>
+    {% for space in parking_spaces %}
+    <p>{{ space }}</p>
+    {% if space.status == 'reserved' %}
+    {% else %}
+    <a href="">Зарезервировать</a>
+    {% endif %}
+    {% if user.role == 'MANAGER' %}
+            <a href="">Изменить время брони</a>
+    {% endif %}
+    {% endfor %}
+{% endblock content %}
