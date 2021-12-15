@@ -21,7 +21,7 @@
 
 ### Демо
 
-Приложение доступно по ссылке `https://internet-lead.herokuapp.com/`
+Приложение доступно по ссылке https://internet-lead.herokuapp.com/
 
 ### Установка
 
